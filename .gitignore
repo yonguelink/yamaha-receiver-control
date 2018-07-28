@@ -1,5 +1,6 @@
 /.env
 /.yarn-cache/
+/yarn.lock
 
 # Created by https://www.gitignore.io/api/node
 
