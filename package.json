@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "Control a Yamaha Receiver on your local network",
   "author": "yonguelink <isaac.computing@gmail.com>",
-  "license": "UNLICENSED",
-  "private": true,
+  "license": "GNU General Public License v3.0",
+  "private": false,
   "scripts": {
     "lint": "eslint . bin/*"
   },
