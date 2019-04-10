@@ -3,6 +3,7 @@
 /yarn.lock
 
 .vscode/
+yavc/
 
 *.lnk
 # Created by https://www.gitignore.io/api/node
