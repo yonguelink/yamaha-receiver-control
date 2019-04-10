@@ -2,6 +2,7 @@
 /.yarn-cache/
 /yarn.lock
 
+*.lnk
 # Created by https://www.gitignore.io/api/node
 
 ### Node ###
