@@ -26,9 +26,18 @@ yargs
         default: 30
       }),
     handler ({input, volume}) {
-      runCommand(require('../src/request'), input, volume);
+      runCommand(require('../src/request').changeInput, input, volume);
     }
   })
+
+  .command({
+    command: 'turn-off',
+    desc: 'Turns off the receiver',
+    handler () {
+      runCommand(require('../src/request').turnOff);
+    }
+  })
+
   .strict()
   .demandCommand(1)
   .version()

@@ -14,6 +14,10 @@ function powerOnRequest () {
   return '<YAMAHA_AV cmd="PUT"><Main_Zone><Power_Control><Power>On</Power></Power_Control></Main_Zone></YAMAHA_AV>';
 }
 
+function powerOffRequest () {
+  return '<YAMAHA_AV cmd="PUT"><Main_Zone><Power_Control><Power>Standby</Power></Power_Control></Main_Zone></YAMAHA_AV>';
+}
+
 function buildInputRequest (input) {
   return `<YAMAHA_AV cmd="PUT"><Main_Zone><Input><Input_Sel>${input}</Input_Sel></Input></Main_Zone></YAMAHA_AV>`;
 }
@@ -22,8 +26,12 @@ function buildVolumeRequest (volume) {
   return `<YAMAHA_AV cmd="PUT"><Main_Zone><Volume><Lvl><Val>-${volume}0</Val><Exp>1</Exp><Unit>dB</Unit></Lvl></Volume></Main_Zone></YAMAHA_AV>`;
 }
 
-module.exports = async function (input, volume) {
+module.exports.changeInput = async function (input, volume) {
   await doRequest(powerOnRequest());
   await doRequest(buildInputRequest(input));
   await doRequest(buildVolumeRequest(volume));
+};
+
+module.exports.turnOff = async function () {
+  await doRequest(powerOffRequest());
 };

@@ -6,7 +6,8 @@
   "license": "GNU General Public License v3.0",
   "private": false,
   "scripts": {
-    "lint": "eslint . bin/*"
+    "lint": "eslint . bin/*",
+    "start": "./bin/controller.js"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
