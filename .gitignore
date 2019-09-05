@@ -1,6 +1,6 @@
 /.env
 /.yarn-cache/
-/yarn.lock
+yarn.lock
 
 .vscode/
 yavc/
