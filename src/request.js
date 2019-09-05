@@ -35,3 +35,7 @@ module.exports.changeInput = async function (input, volume) {
 module.exports.turnOff = async function () {
   await doRequest(powerOffRequest());
 };
+
+module.exports.changeVolume = function (volume) {
+  return doRequest(buildVolumeRequest(volume));
+};
