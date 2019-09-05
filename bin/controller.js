@@ -25,7 +25,7 @@ yargs
         type: 'number',
         default: 30
       }),
-    handler ({input, volume}) {
+    handler ({ input, volume }) {
       runCommand(require('../src/request').changeInput, input, volume);
     }
   })

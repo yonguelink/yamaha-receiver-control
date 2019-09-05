@@ -2,7 +2,7 @@ const axios = require('axios');
 
 const receiverUrl = 'http://192.168.1.13/YamahaRemoteControl/ctrl';
 const config = {
-  headers: {'Content-Type': 'text/xml'},
+  headers: { 'Content-Type': 'text/xml' },
   responseType: 'text'
 };
 
