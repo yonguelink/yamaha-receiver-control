@@ -27,6 +27,7 @@ function buildVolumeRequest (volume) {
 }
 
 module.exports.changeInput = async function (input, volume) {
+  await doRequest(powerOffRequest());
   await doRequest(powerOnRequest());
   await doRequest(buildInputRequest(input));
   await doRequest(buildVolumeRequest(volume));
