@@ -1,4 +1,6 @@
 const axios = require('axios');
+const { promisify } = require('util');
+const doWait = promisify(setTimeout);
 
 const receiverUrl = 'http://192.168.1.13/YamahaRemoteControl/ctrl';
 const config = {
@@ -28,6 +30,7 @@ function buildVolumeRequest (volume) {
 
 module.exports.changeInput = async function (input, volume) {
   await doRequest(powerOffRequest());
+  await doWait(500);
   await doRequest(powerOnRequest());
   await doRequest(buildInputRequest(input));
   await doRequest(buildVolumeRequest(volume));
