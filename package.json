@@ -14,15 +14,15 @@
     "eslint-config-semistandard": "^15.0.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^4.0.1"
   },
   "dependencies": {
     "axios": "^0.19.0",
-    "fs-extra": "^8.1.0",
+    "fs-extra": "^9.0.0",
     "moment": "^2.24.0",
-    "yargs": "^14.0.0"
+    "yargs": "^15.3.1"
   }
 }
