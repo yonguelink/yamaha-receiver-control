@@ -6,7 +6,7 @@ const moment = require('moment');
 
 const doWait = promisify(setTimeout);
 
-const receiverUrl = 'http://192.168.1.13/YamahaRemoteControl/ctrl';
+const receiverUrl = 'http://10.0.0.13/YamahaRemoteControl/ctrl';
 const config = {
   headers: { 'Content-Type': 'text/xml' },
   responseType: 'text'
