@@ -10,17 +10,17 @@
     "start": "./bin/controller.js"
   },
   "devDependencies": {
-    "eslint": "^7.4.0",
-    "eslint-config-semistandard": "^15.0.0",
-    "eslint-config-standard": "^16.0.2",
+    "eslint": "^8.27.0",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^5.0.0"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^1.1.3",
     "fs-extra": "^10.0.0",
     "moment": "^2.24.0",
     "yargs": "^17.0.1"
